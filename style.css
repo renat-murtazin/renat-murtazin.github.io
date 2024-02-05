@@ -164,6 +164,12 @@ body {
     flex-wrap: wrap;
 }
 
+.certification a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .certification img {
     max-width: 50%;
     height: auto;
