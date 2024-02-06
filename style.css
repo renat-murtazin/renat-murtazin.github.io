@@ -1,0 +1,504 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-line {
+    height: 1.5em;
+    margin: auto;
+    max-width: 1024px;
+    background-color: #333F50;
+    position: relative;
+}
+
+.export {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 1rem;
+    margin-top: 2rem;
+
+}
+
+.btn img {
+    width: 2.7rem;
+    cursor: pointer;
+}
+
+
+.main-content {
+    min-height: 100vh;
+    margin: auto;
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.left-section {
+    background-color: #D6DCE5;
+    color: #464646;
+}
+
+.left-content {
+    padding: 1rem 2rem;
+}
+
+.image {
+    width: 100%;
+    text-align: center;
+}
+
+.profile {
+    width: 100%;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    border-bottom: 3px solid #eff6ff;
+    align-items: center;
+}
+
+
+.profile img {
+    width: 40%;
+    border-radius: 50%;
+    border: 4px solid #eff6ff;
+}
+
+.name {
+    color: #464646;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 1.2rem;
+}
+
+.career {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #464646;
+    padding-bottom: 0.25rem;
+
+}
+
+.right-section {
+    background-color: #fff;
+    height: 100%;
+    /* grid-column: span 5; */
+}
+
+.main-title {
+    font-size: 1.4rem;
+    color: #464646;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 0.4rem;
+}
+
+.contact-info ul li {
+    padding: 0.25rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info ul li i {
+    padding-right: 0.8rem;
+    font-size: 1.2rem;
+    color: #333F50;
+}
+
+.top-skills-section ul li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5rem 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 0.4rem;
+    background-color: #eff6ff;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+
+.actual-progress {
+    position: absolute;
+    background-color: #333F50;
+    left: 0;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.tool-set {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+}
+
+.skill {
+    background-color: #eff6ff;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    padding: 0.1rem 0.5rem;
+    margin: 0.2rem 0.1rem;
+    color: #1d242e;
+}
+
+.language-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.5rem 0.2rem;
+}
+
+.language {
+    margin-right: 1rem;
+}
+
+.proficiency-level {
+    background-color: #eff6ff;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    padding: 0.1rem 0.5rem;
+    margin: 0.2rem;
+}
+
+.certification {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 0.8rem;
+}
+
+.certification img {
+    max-width: 80px;
+    height: auto;
+}
+
+.show-cert-in-skill,
+.show-cert-text {
+    display: none;
+}
+
+/* Right Section Styles */
+.right-main-content {
+    padding: 1rem 2rem;
+}
+
+.sect {
+    padding-bottom: 2rem;
+}
+
+.right-title {
+    font-weight: 350;
+    /* font-size: 2rem; */
+    color: #333F50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+
+.para {
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    color: #333F50;
+}
+
+.about {
+    padding-bottom: 1.5rem;
+}
+
+/* Experience Styles */
+
+.timeline {
+    padding-left: 2.1rem;
+    color: #333F50;
+    padding-bottom: 1.4rem;
+    border-left: 3px solid #D6DCE5;
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #333F50;
+    border-radius: 50%;
+    transform: translateX(-60%);
+    left: 0;
+}
+
+.company-name {
+    font-weight: 600;
+    padding-bottom: 0.2rem;
+}
+
+.project-intro {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #D6DCE5;
+    margin-bottom: 0.5rem;
+}
+
+.job-title {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.job-desc-word,
+.proj-time {
+    font-style: italic;
+}
+
+.proj-desc {
+    padding-bottom: 0.4rem;
+}
+
+.stack {
+    display: flex;
+    justify-content: start;
+    padding-top: 0.2rem;
+    flex-wrap: wrap;
+}
+
+.tool {
+    border-radius: 10px;
+    background-color: #D6DCE5;
+    margin: 0.2rem;
+    padding: 0 0.4rem;
+    font-size: 0.8rem;
+    color: #1d242e;
+}
+
+.about-proj {
+    padding-bottom: 0.4rem;
+}
+
+.achievements ul li {
+    list-style-type: disc;
+    color: #333F50;
+}
+
+.achievements ul {
+    margin-left: 1rem;
+}
+
+.tl-ed-padding {
+    padding-bottom: 0.4rem;
+}
+
+
+/*Media Querries*/
+
+/* @media screen and (max-width:1023px) {} */
+
+@media screen and (max-width:800px) {
+
+    .main-content {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .btn img {
+        width: 2.4rem;
+    }
+
+    .left-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-info,
+    .top-skills-section,
+    .certifications-section,
+    .languages-section {
+        width: 100%;
+    }
+
+    .profile img {
+        width: 35%;
+    }
+
+    .contact-info ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-info ul li {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .top-skills-section ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .progress-bar {
+        padding-left: 2rem;
+        width: 100px;
+    }
+
+    .top-skills-section ul li {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .tools-skills-section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: space-evenly;
+    }
+
+    .tool-set {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:390px) {
+    .profile img {
+        width: 50%;
+    }
+
+    .project-intro {
+        display: block;
+    }
+}
+
+@media print {
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-content {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+    }
+
+    .print-intro-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px solid #D6DCE5;
+        padding-bottom: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #contacts {
+        order: 1;
+    }
+
+    #languages {
+        order: 2;
+    }
+
+    #topSkills {
+        order: 3;
+    }
+
+    #skillSet {
+        order: 4;
+    }
+
+    #certifications {
+        order: 5;
+    }
+
+    .language-container {
+        padding-left: 4rem;
+        display: flex;
+    }
+
+    .top-skills-section ul li {
+        display: list-item;
+        padding-top: 0;
+        list-style-type: disc;
+
+    }
+
+    .profile {
+        border-bottom: 1px solid #333F50;
+    }
+
+    .skill {
+        border-radius: 0px;
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+        font-size: 1rem;
+        position: relative;
+        margin-left: 1rem;
+        color: #333F50;
+    }
+
+    .skill::before {
+        content: "";
+        border-radius: 50%;
+        background-color: #333F50;
+        position: absolute;
+        top: 10px;
+        left: -12px;
+        width: 5.5px;
+        height: 5.5px;
+    }
+
+
+    .show-cert-in-skill {
+        display: inline;
+    }
+
+    .certifications-section,
+    .progress-bar {
+
+        display: none;
+    }
+
+    .image,
+    header,
+    footer {
+        display: none;
+    }
+
+    .certification a,
+    .certification img {
+        display: none;
+    }
+
+    .show-cert-text {
+        display: block;
+    }
+
+    .timeline::before {
+        visibility: hidden;
+    }
+
+    .timeline {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .right-title {
+        font-size: 1.5rem;
+    }
+}
