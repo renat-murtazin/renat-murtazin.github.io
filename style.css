@@ -13,24 +13,28 @@ body {
 .header-line {
     height: 1.5em;
     margin: auto;
+    max-width: 1024px;
     background-color: #333F50;
 }
 
 .main-content {
     min-height: 100vh;
     margin: auto;
+    max-width: 1024px;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: 1fr 2fr;
 }
 
 .left-section {
-    grid-column: span 2;
     background-color: #D6DCE5;
-    color: #464646
+    color: #464646;
+    height: 100%;
+
 }
 
 .left-content {
     padding: 1rem 2rem;
+
 }
 
 .image {
@@ -54,7 +58,6 @@ body {
 }
 
 .name {
-    font-size: 1.8rem;
     color: #464646;
     text-align: center;
     text-transform: uppercase;
@@ -75,7 +78,7 @@ body {
 .right-section {
     background-color: #fff;
     height: 100%;
-    grid-column: span 5;
+    /* grid-column: span 5; */
 }
 
 .main-title {
@@ -127,7 +130,7 @@ body {
     padding: 0.5rem 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 0.2rem;
 }
 
 .skill {
@@ -135,7 +138,7 @@ body {
     border-radius: 10px;
     font-size: 0.8rem;
     padding: 0.1rem 0.5rem;
-    margin: 0.2rem;
+    margin: 0.2rem 0.1rem;
     color: #1d242e;
 }
 
@@ -162,10 +165,11 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    column-gap: 0.8rem;
 }
 
 .certification img {
-    max-width: 50%;
+    max-width: 80px;
     height: auto;
 }
 
@@ -247,13 +251,12 @@ body {
 
 .proj-desc {
     padding-bottom: 0.4rem;
-    display: flex;
-    justify-content: space-between;
 }
 
 .stack {
     display: flex;
     justify-content: start;
+    padding-top: 0.2rem;
     flex-wrap: wrap;
 }
 
@@ -277,4 +280,8 @@ body {
 
 .achievements ul {
     margin-left: 1rem;
+}
+
+.tl-ed-padding {
+    padding-bottom: 0.4rem;
 }
