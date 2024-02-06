@@ -15,7 +15,24 @@ body {
     margin: auto;
     max-width: 1024px;
     background-color: #333F50;
+    position: relative;
 }
+
+.export {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 1rem;
+    margin-top: 2rem;
+
+}
+
+.btn img {
+    width: 2.7rem;
+    cursor: pointer;
+}
+
 
 .main-content {
     min-height: 100vh;
@@ -171,6 +188,11 @@ body {
     height: auto;
 }
 
+.show-cert-in-skill,
+.show-cert-text {
+    display: none;
+}
+
 /* Right Section Styles */
 .right-main-content {
     padding: 1rem 2rem;
@@ -201,10 +223,6 @@ body {
 }
 
 /* Experience Styles */
-/* .project-wrapper {
-    border-left: 3px solid #D6DCE5;
-    position: relative;
-} */
 
 .timeline {
     padding-left: 2.1rem;
@@ -296,9 +314,9 @@ body {
         display: flex;
     }
 
-    /* .left-section {
-        display: flex;
-    }*/
+    .btn img {
+        width: 2.4rem;
+    }
 
     .left-content {
         display: flex;
@@ -349,6 +367,10 @@ body {
         justify-content: space-evenly;
     }
 
+    .tool-set {
+        justify-content: center;
+    }
+
 }
 
 @media screen and (max-width:390px) {
@@ -358,5 +380,125 @@ body {
 
     .project-intro {
         display: block;
+    }
+}
+
+@media print {
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-content {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+    }
+
+    .print-intro-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px solid #D6DCE5;
+        padding-bottom: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #contacts {
+        order: 1;
+    }
+
+    #languages {
+        order: 2;
+    }
+
+    #topSkills {
+        order: 3;
+    }
+
+    #skillSet {
+        order: 4;
+    }
+
+    #certifications {
+        order: 5;
+    }
+
+    .language-container {
+        padding-left: 4rem;
+        display: flex;
+    }
+
+    .top-skills-section ul li {
+        display: list-item;
+        padding-top: 0;
+        list-style-type: disc;
+
+    }
+
+    .profile {
+        border-bottom: 1px solid #333F50;
+    }
+
+    .skill {
+        border-radius: 0px;
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+        font-size: 1rem;
+        position: relative;
+        margin-left: 1rem;
+        color: #333F50;
+    }
+
+    .skill::before {
+        content: "";
+        border-radius: 50%;
+        background-color: #333F50;
+        position: absolute;
+        top: 10px;
+        left: -12px;
+        width: 5.5px;
+        height: 5.5px;
+    }
+
+
+    .show-cert-in-skill {
+        display: inline;
+    }
+
+    .certifications-section,
+    .progress-bar {
+
+        display: none;
+    }
+
+    .image,
+    header,
+    footer {
+        display: none;
+    }
+
+    .certification a,
+    .certification img {
+        display: none;
+    }
+
+    .show-cert-text {
+        display: block;
+    }
+
+    .timeline::before {
+        visibility: hidden;
+    }
+
+    .timeline {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .right-title {
+        font-size: 1.5rem;
     }
 }

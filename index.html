@@ -16,7 +16,14 @@
 </head>
 
 <body>
-    <header class="header-line"></header>
+    <header class="header-line">
+        <div class="export">
+            <div class="btn" id="saveButton">
+                <img src="/img/export.png" alt="Export to PDF">
+            </div>
+        </div>
+    </header>
+
     <main class="main-content">
         <section class="left-section">
             <div class="left-content">
@@ -28,113 +35,120 @@
                     <h2 class="name">Renat Murtazin</h2>
                     <p class="career">Data Engineer / BI Developer</p>
                 </div>
-                <!-- Contact Details -->
-                <div class="contact-info">
-                    <h3 class="main-title">Contact Info</h3>
-                    <ul>
-                        <li>
-                            <i class="fa fa-phone"></i>
-                            +90(534)-525-17-12
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope"></i>
-                            <a class="link" href="mailto:renat.murtazin96@gmail.com">renat.murtazin96@gmail.com</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-linkedin"></i>
-                            <a class="link" href="https://www.linkedin.com/in/renat-murtazin/"
-                                target="_blank">renat-murtazin</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-map-marker"></i>
-                            Izmir, Turkey
-                        </li>
-                    </ul>
-                </div>
-                <!-- Main Skills -->
-                <div class="top-skills-section">
-                    <h3 class="main-title">MAIN SKILLS</h3>
-                    <ul>
-                        <li>
-                            <p class="skill-title">Snowflake</p>
-                            <div class="progress-bar">
-                                <div class="actual-progress" style="width: 90%;"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="skill-title">SQL</p>
-                            <div class="progress-bar">
-                                <div class="actual-progress" style="width: 90%;"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="skill-title">Tableau</p>
-                            <div class="progress-bar">
-                                <div class="actual-progress" style="width: 90%;"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="skill-title">Python</p>
-                            <div class="progress-bar">
-                                <div class="actual-progress" style="width: 75%;"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="skill-title">AWS</p>
-                            <div class="progress-bar">
-                                <div class="actual-progress" style="width: 50%;"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="skill-title">Postgres</p>
-                            <div class="progress-bar">
-                                <div class="actual-progress" style="width: 90%;"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Tools and Skills Set -->
-                <div class="tools-skills-section">
-                    <h3 class="main-title">TOOLS & SKILLS SET</h3>
-                    <div class="tool-set">
-                        <div class="skill">Snowflake</div>
-                        <div class="skill">SQL</div>
-                        <div class="skill">Postgres</div>
-                        <div class="skill">AWS</div>
-                        <div class="skill">Python</div>
-                        <div class="skill">Tableau Desktop</div>
-                        <div class="skill">Looker</div>
-                        <div class="skill">Airflow</div>
-                        <div class="skill">Databricks</div>
-                        <div class="skill">Tableau Server</div>
-                        <div class="skill">Git</div>
-                        <div class="skill">Pentaho</div>
-                        <div class="skill">ETL / ELT</div>
-                        <div class="skill">DWH</div>
-                        <div class="skill">Agile</div>
-                        <div class="skill">Tableau Prep</div>
-                        <div class="skill">Data Modeling</div>
-                        <div class="skill">SQLDBM</div>
-                        <div class="skill">Power BI (novice)</div>
-                        <div class="skill">Scala</div>
+                <div class="print-intro-wrapper">
+                    <!-- Contact Details -->
+                    <div class="contact-info" id="contacts">
+                        <h3 class="main-title">Contact Info</h3>
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                +90(534)-525-17-12
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <a class="link" href="mailto:renat.murtazin96@gmail.com">renat.murtazin96@gmail.com</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-linkedin"></i>
+                                <a class="link" href="https://www.linkedin.com/in/renat-murtazin/"
+                                    target="_blank">renat-murtazin</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <span>Izmir, Turkey<br>Open for relocation</span>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <!-- Languages -->
-                <div class="languages-section">
-                    <h3 class="main-title">LANGUAGES</h3>
-                    <div class="language-container">
-                        <p class="language">English - <strong>C1</strong></p>
-                        <p class="language">French - <strong>B1</strong></p>
-                        <p class="language">Russian - <strong>native</strong></p>
+                    <!-- Main Skills -->
+                    <div class="top-skills-section" id="topSkills">
+                        <h3 class="main-title">MAIN SKILLS</h3>
+                        <ul>
+                            <li>
+                                <p class="skill-title">Snowflake <span class="show-cert-in-skill"> (SnowPRO
+                                        Certified)</span>
+                                </p>
+                                <div class="progress-bar">
+                                    <div class="actual-progress" style="width: 90%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="skill-title">SQL</p>
+                                <div class="progress-bar">
+                                    <div class="actual-progress" style="width: 90%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="skill-title">Tableau <span class="show-cert-in-skill"> (Tableau Desk
+                                        Certified)</span></p>
+                                <div class="progress-bar">
+                                    <div class="actual-progress" style="width: 90%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="skill-title">Python</p>
+                                <div class="progress-bar">
+                                    <div class="actual-progress" style="width: 75%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="skill-title">AWS</p>
+                                <div class="progress-bar">
+                                    <div class="actual-progress" style="width: 50%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="skill-title">Postgres</p>
+                                <div class="progress-bar">
+                                    <div class="actual-progress" style="width: 90%;"></div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="certifications-section">
-                    <h3 class="main-title">CERTIFICATIONS</h3>
-                    <div class="certification">
-                        <a href="https://www.credly.com/badges/d970f840-b7ed-4d6d-bc58-44cd610a2c75/public_url"
-                            target="_blank"><img src="img/snowpro.png" alt=""></a>
-                        <a href="https://www.credly.com/badges/ca4b34db-0f32-4adc-8e90-5223f7c48085/public_url"
-                            target="_blank"><img src="img/tableau.png" alt=""></a>
+                    <!-- Tools and Skills Set -->
+                    <div class="tools-skills-section" id="skillSet">
+                        <h3 class="main-title">TOOLS & SKILLS SET</h3>
+                        <div class="tool-set">
+                            <div class="skill">Snowflake</div>
+                            <div class="skill">SQL</div>
+                            <div class="skill">Postgres</div>
+                            <div class="skill">AWS</div>
+                            <div class="skill">Python</div>
+                            <div class="skill">Tableau Desktop</div>
+                            <div class="skill">Looker</div>
+                            <div class="skill">Airflow</div>
+                            <div class="skill">Databricks</div>
+                            <div class="skill">Tableau Server</div>
+                            <div class="skill">Git</div>
+                            <div class="skill">Pentaho</div>
+                            <div class="skill">ETL / ELT</div>
+                            <div class="skill">DWH</div>
+                            <div class="skill">Agile</div>
+                            <div class="skill">Tableau Prep</div>
+                            <div class="skill">Data Modeling</div>
+                            <div class="skill">SQLDBM</div>
+                            <div class="skill">Power BI (novice)</div>
+                            <div class="skill">Scala</div>
+                        </div>
+                    </div>
+                    <!-- Languages -->
+                    <div class="languages-section" id="languages">
+                        <h3 class="main-title">LANGUAGES</h3>
+                        <div class="language-container">
+                            <p class="language">English - <strong>C1</strong></p>
+                            <p class="language">French - <strong>B1</strong></p>
+                            <p class="language">Russian - <strong>native</strong></p>
+                        </div>
+                    </div>
+                    <div class="certifications-section" id="certifications">
+                        <h3 class="main-title">CERTIFICATIONS</h3>
+                        <div class="certification">
+                            <a href="https://www.credly.com/badges/d970f840-b7ed-4d6d-bc58-44cd610a2c75/public_url"
+                                target="_blank"><img src="img/snowpro.png" alt="Snowflake (SnowPRO)"></a>
+                            <a href="https://www.credly.com/badges/ca4b34db-0f32-4adc-8e90-5223f7c48085/public_url"
+                                target="_blank"><img src="img/tableau.png" alt="Tablea Desktop Specialist"></a>
+                            <span class="show-cert-text">Snowflake SnowPro</span>
+                            <span class="show-cert-text">Tableau Desktop Specialist</span>
+                        </div>
                     </div>
                 </div>
 
@@ -354,5 +368,6 @@
         </section>
     </main>
 </body>
+<script src="/script.js" defer></script>
 
 </html>
