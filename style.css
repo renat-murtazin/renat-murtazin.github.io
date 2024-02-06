@@ -28,13 +28,10 @@ body {
 .left-section {
     background-color: #D6DCE5;
     color: #464646;
-    height: 100%;
-
 }
 
 .left-content {
     padding: 1rem 2rem;
-
 }
 
 .image {
@@ -48,11 +45,12 @@ body {
     max-width: 100%;
     overflow: hidden;
     border-bottom: 3px solid #eff6ff;
+    align-items: center;
 }
 
 
 .profile img {
-    width: 80%;
+    width: 40%;
     border-radius: 50%;
     border: 4px solid #eff6ff;
 }
@@ -284,4 +282,81 @@ body {
 
 .tl-ed-padding {
     padding-bottom: 0.4rem;
+}
+
+
+/*Media Querries*/
+
+/* @media screen and (max-width:1023px) {} */
+
+@media screen and (max-width:800px) {
+
+    .main-content {
+        flex-direction: column;
+        display: flex;
+    }
+
+    /* .left-section {
+        display: flex;
+    }*/
+
+    .left-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-info,
+    .top-skills-section,
+    .certifications-section,
+    .languages-section {
+        width: 100%;
+    }
+
+    .profile img {
+        width: 35%;
+    }
+
+    .contact-info ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-info ul li {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .top-skills-section ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .progress-bar {
+        padding-left: 2rem;
+        width: 100px;
+    }
+
+    .top-skills-section ul li {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .tools-skills-section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (max-width:390px) {
+    .profile img {
+        width: 50%;
+    }
+
+    .project-intro {
+        display: block;
+    }
 }
