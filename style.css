@@ -340,10 +340,10 @@ body {
         justify-content: center;
     }
 
-    .contact-info ul li {
+    /* .contact-info ul li {
         padding-left: 2rem;
         padding-right: 2rem;
-    }
+    } */
 
     .top-skills-section ul {
         display: flex;
