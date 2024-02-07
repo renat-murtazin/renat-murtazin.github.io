@@ -305,8 +305,6 @@ body {
 
 /*Media Querries*/
 
-/* @media screen and (max-width:1023px) {} */
-
 @media screen and (max-width:800px) {
 
     .main-content {
@@ -321,6 +319,7 @@ body {
     .left-content {
         display: flex;
         flex-wrap: wrap;
+        padding: 1rem 0;
     }
 
     .contact-info,
