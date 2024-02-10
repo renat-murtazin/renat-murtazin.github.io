@@ -10,6 +10,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+a:link {
+    color: #333F50;
+}
+
+a:visited {
+    color: #333F50;
+}
+
 .header-line {
     height: 1.5em;
     margin: auto;
@@ -117,6 +125,10 @@ body {
     font-size: 1.2rem;
     color: #333F50;
     width: 1.8rem;
+}
+
+.cv {
+    display: none;
 }
 
 .top-skills-section ul li {
@@ -290,12 +302,18 @@ body {
     padding-bottom: 0.4rem;
 }
 
-.achievements ul li {
-    list-style-type: disc;
-    color: #333F50;
+.proj-desc-list {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
-.achievements ul {
+.proj-desc-list ul li {
+    list-style-type: disc;
+    color: #333F50;
+    padding-bottom: 0.2rem;
+}
+
+.proj-desc-list ul {
     margin-left: 1rem;
 }
 
@@ -305,8 +323,6 @@ body {
 
 
 /*Media Querries*/
-
-/* @media screen and (max-width:1023px) {} */
 
 @media screen and (max-width:800px) {
 
@@ -433,13 +449,15 @@ body {
         ;
     }
 
+    .cv {
+        display: block;
+    }
+
     .right-main-content {
         position: absolute;
         left: 50;
         top: 600px;
     }
-
-
 
     #contacts {
         order: 1;
