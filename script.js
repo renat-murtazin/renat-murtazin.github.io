@@ -153,8 +153,19 @@ const renderExperience = () => {
 
     data.experience.projects.forEach((exp) => {
         let stack = exp.stack.map(tool => `<div class="tool">${tool}</div>`).join('');
-        let responsibilities = exp.responsibilities.map(res => `<li><p class="para">${res}</p></li>`).join('');
-        let achievements = exp.achievements.map(ach => `<li><p class="para">${ach}</p></li>`).join('');
+        let responsibilities = exp.responsibilities.length > 0
+            ? `<h4>Main Responsibilities</h4>
+                <div class="proj-desc-list">
+                    <ul>${exp.responsibilities.map(res => `<li><p class="para">${res}</p></li>`).join('')}</ul>
+                </div>`
+            : '';
+
+        let achievements = exp.achievements.length > 0
+            ? `<h4>Achievements</h4>
+                <div class="proj-desc-list">
+                    <ul>${exp.achievements.map(ach => `<li><p class="para">${ach}</p></li>`).join('')}</ul>
+                </div>`
+            : '';
 
         experienceSection.innerHTML += `
             <div class="timeline">
@@ -170,22 +181,12 @@ const renderExperience = () => {
                     </div>
                 </div>
                 <p class="para about-proj">${exp.description}</p>
-                <h4>Main Responsibilities</h4>
-                <div class="proj-desc-list">
-                    <ul>
-                        ${responsibilities}
-                    </ul>
-                </div>
-                <h4>Achievements</h4>
-                <div class="proj-desc-list">
-                    <ul>
-                        ${achievements}
-                    </ul>
-                </div>
+                ${responsibilities}
+                ${achievements}
             </div>
         `;
     });
-}
+};
 
 // Render Education Section
 function renderEducation() {

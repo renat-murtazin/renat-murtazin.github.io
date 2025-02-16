@@ -7,27 +7,27 @@ export const data = {
     contactInfo: [
         {
             iconClass: "fa-phone",
-            content: "+90(534)-525-17-12",
+            content: "+11111",
             link: null
         },
         {
             iconClass: "fa-envelope",
-            content: "renat.murtazin96@gmail.com",
-            link: "mailto:renat.murtazin96@gmail.com"
+            content: "remailil.com",
+            link: "mailto:remailil@gmail.com"
         },
         {
             iconClass: "fa-github",
-            content: "renat-murtazin",
-            link: "https://renat-murtazin.github.io/"
+            content: "test",
+            link: "https://test.io/"
         },
         {
             iconClass: "fa-linkedin",
-            content: "renat-murtazin",
-            link: "https://www.linkedin.com/in/renat-murtazin/"
+            content: "test-test",
+            link: "https://www.linkedin.com/in/test-test/"
         },
         {
             iconClass: "fa-map-marker",
-            content: "Izmir, Turkey",
+            content: "test, test",
             link: null,
             additionalContent: "Open for relocation"
         }
@@ -95,7 +95,7 @@ export const data = {
         title: "EXPERIENCE",
         projects: [
             {
-                company: "EPAM SYSTEMS",
+                company: "test test",
                 jobTitle: "Data Engineering & Data Visualisation",
                 period: "2023.05 - Present",
                 project: "Automative Information",
@@ -113,7 +113,7 @@ export const data = {
                 ]
             },
             {
-                company: "EPAM SYSTEMS",
+                company: "test test",
                 jobTitle: "Data Engineering",
                 period: "2022.10 - 2023.04",
                 project: "Pharmaceutical and Healthcare",
@@ -130,7 +130,7 @@ export const data = {
                 ]
             },
             {
-                company: "EPAM SYSTEMS",
+                company: "test test",
                 jobTitle: "Data Engineering & Data Visualisation",
                 period: "2021.05 - 2022.10",
                 project: "Sports and Athleticware Brand",
@@ -148,7 +148,7 @@ export const data = {
                 ]
             },
             {
-                company: "EPAM SYSTEMS",
+                company: "test test",
                 jobTitle: "Non-project activities",
                 period: "2021.03 - Present",
                 project: "Non-project activities",
@@ -162,7 +162,7 @@ export const data = {
                 ]
             },
             {
-                company: "SIBUR",
+                company: "test",
                 jobTitle: "Data Engineering & Data Visualisation",
                 period: "2019.05 - 2021.03",
                 project: "Oil Refining",
@@ -187,13 +187,13 @@ export const data = {
         title: "EDUCATION",
         programs: [
             {
-                university: "Lobachevsky State University",
+                university: "test State test",
                 program: "Electronics & Nano-electronics",
                 degree: "Master's Degree",
                 period: "2018 - 2020"
             },
             {
-                university: "Lobachevsky State University",
+                university: "test State test",
                 program: "Nanotechnologies & Microengineering",
                 degree: "Bachelor's Degree",
                 period: "2014 - 2018"
