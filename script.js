@@ -1,5 +1,3 @@
-// saveButton.addEventListener("click", () => { window.print() });
-
 import { data } from './src/data.js';
 
 // Function to render the "Profile" section
