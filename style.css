@@ -196,14 +196,33 @@ a:visited {
     column-gap: 0.8rem;
 }
 
-.certification img {
-    max-width: 80px;
-    height: auto;
+.certification-item {
+    text-align: center;
+    /* Ensure the content is centered within each item */
+    margin: auto;
+    /* Add margin for spacing between items */
 }
 
-.show-cert-in-skill,
+.certification-item img {
+    max-width: 80px;
+    height: auto;
+    display: block;
+    /* Ensure image is block level to avoid any inline spacing */
+    margin: 0 auto;
+    /* Center the image horizontally and add space below */
+}
+
 .show-cert-text {
-    display: none;
+    display: block;
+    /* Show the text below the image */
+    font-size: 0.8rem;
+    /* Adjust the font size */
+    font-weight: bold;
+    /* Make the text bold */
+    color: #333;
+    /* Set text color */
+    text-align: center;
+    /* Center the text below the image */
 }
 
 /* Right Section Styles */
@@ -357,11 +376,6 @@ a:visited {
         justify-content: center;
     }
 
-    /* .contact-info ul li {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    } */
-
     .top-skills-section ul {
         display: flex;
         flex-wrap: wrap;
@@ -405,6 +419,19 @@ a:visited {
 }
 
 @media print {
+
+    @page {
+        size: 210mm 297mm;
+        margin: 5 5;
+    }
+
+    .left-content,
+    .left-section {
+        width: 85mm;
+    }
+}
+
+/* @media print {
 
     @page {
         size: 210mm 297mm;
@@ -550,4 +577,4 @@ a:visited {
     .right-title {
         font-size: 1.5rem;
     }
-}
+} */
